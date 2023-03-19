@@ -1,3 +1,5 @@
+
+
 # DAY4:两两交换链表中的节点、删除链表的倒数第N个节点、链表相交、环形链表
 
 ## 两两交换链表中的节点
@@ -82,6 +84,55 @@ public:
         //已经找到了该节点，对其进行删除操作，同时释放内存
         slow -> next = slow -> next -> next;
         return dummyhead -> next;
+    }
+};
+```
+
+## 环形链表
+
+解题关键点：
+
+**1、判断是否有环（双指针法）**
+
+**2、找到环的入口**
+
+在本道题目中，快指针两步一次；慢指针一步一次。如果存在环形链表的话相当于快指针以相对于慢指针一步一次的距离进行追赶慢指针。
+
+判断是否有环：即判断两个指针能否相等。一直循环，在循环中终止条件为快指针的下一个节点和下下一个节点不为空指针。
+
+有环之后，环的入口是求解重点
+
+![image-20230319180817474](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20230319180817474.png)
+
+```c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *detectCycle(ListNode *head) {
+        ListNode* fast = head;//定义快指针
+        ListNode* slow = head;//定义慢指针
+        while(fast != NULL && fast->next != NULL) {//判断是否为环，快指针可以一直运动知道他为空指针
+            slow = slow->next;
+            fast = fast->next->next;
+            // 快慢指针相遇，此时从head 和 相遇点，同时查找直至相遇
+            if (slow == fast) {//此时快慢指针相遇，并且一定是在慢指针进入的第一圈相遇
+                ListNode* index1 = fast;//相遇时候的地址节点
+                ListNode* index2 = head;
+                while (index1 != index2) {
+                    index1 = index1->next;
+                    index2 = index2->next;
+                }
+                return index2; // 返回环的入口
+            }
+        }
+        return NULL;
     }
 };
 ```
