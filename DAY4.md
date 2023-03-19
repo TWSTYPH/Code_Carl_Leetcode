@@ -101,8 +101,7 @@ public:
 判断是否有环：即判断两个指针能否相等。一直循环，在循环中终止条件为快指针的下一个节点和下下一个节点不为空指针。
 
 有环之后，环的入口是求解重点
-
-![image-20230319180817474](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20230319180817474.png)
+![32e8022397fc99fc7610ec2dc23be33](https://user-images.githubusercontent.com/103561103/226171600-beb82901-0e2c-484a-a60a-947cfb557967.jpg)
 
 ```c++
 /**
