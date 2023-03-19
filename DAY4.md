@@ -88,6 +88,71 @@ public:
 };
 ```
 
+## 链表相交
+
+求两个链表相交交点
+
+重点注意：**交点不是数值相等，而是指针相等**     两个链表的可能没有交点，但是却可以做到链表中指针相等。
+
+1、判断计算出两链表各自长度
+
+2、分别将各自链表头结点赋值给两个当前节点
+
+3、将较短的那一个链表尾部和较长的链表尾部对齐。先求出两个长度的差值，将两个差值循环，让较长的链表先走这么长的路。
+
+4、循环向前移动两个链表，直到有交点处，或者长链表的当前节点为空。
+
+```c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        ListNode* curA = headA;
+        ListNode* curB = headB;
+        int lenA = 0, lenB = 0;
+        while (curA != NULL) { // 求链表A的长度
+            lenA++;
+            curA = curA->next;
+        }
+        while (curB != NULL) { // 求链表B的长度
+            lenB++;
+            curB = curB->next;
+        }
+        curA = headA;
+        curB = headB;
+        // 让curA为最长链表的头，lenA为其长度
+        if (lenB > lenA) {
+            swap (lenA, lenB);
+            swap (curA, curB);
+        }
+        // 求长度差
+        int gap = lenA - lenB;
+        // 让curA和curB在同一起点上（末尾位置对齐）
+        while (gap--) {
+            curA = curA->next;
+        }
+        // 遍历curA 和 curB，遇到相同则直接返回
+        while (curA != NULL) {
+            if (curA == curB) {
+                return curA;
+            }
+            curA = curA->next;
+            curB = curB->next;
+        }
+        return NULL;
+    }
+};
+```
+
+
+
 ## 环形链表
 
 解题关键点：
