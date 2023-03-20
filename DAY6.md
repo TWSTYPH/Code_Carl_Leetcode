@@ -1,5 +1,7 @@
 # DAY6:哈希表基础、有效字母异位词
 
+![扫描全能王 2023-03-20 21 55_1](https://user-images.githubusercontent.com/103561103/226363357-89f2fef1-8dc2-49eb-a6bc-99f33cd0cd98.jpg)
+
 ## 有效字母异位词
 
 
@@ -25,6 +27,7 @@ public:
 ```
 
 ## 求两个数组的交集
+![扫描全能王 2023-03-20 21 55_2](https://user-images.githubusercontent.com/103561103/226363530-7680569b-2b44-40cd-ba13-d0ba6cccc756.jpg)
 
 
 
@@ -50,6 +53,7 @@ public:
 
 ## 两数之和
 
+![扫描全能王 2023-03-20 21 55_3](https://user-images.githubusercontent.com/103561103/226363585-4e175db6-87c5-46e3-ac9e-b83d5019e65e.jpg)
 
 
 ```c++
