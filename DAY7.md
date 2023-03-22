@@ -3,6 +3,7 @@
 ## 四数相加
 
 
+![ae21bc9e530cd6df190766f35981128](https://user-images.githubusercontent.com/103561103/226859248-f989c4bb-afc0-4c37-8c48-005245ebf2b8.jpg)
 
 ```
 class Solution {
@@ -31,8 +32,7 @@ public:
 
 
 ## 救赎信
-
-
+![a13f1ad9f94ea3784ef9753ccfb5a68](https://user-images.githubusercontent.com/103561103/226859318-20e0f083-aa9b-48f8-9b53-91650c2739f6.jpg)
 
 ```
 class Solution {
@@ -63,6 +63,7 @@ public:
 ## 三数之和
 
 
+![b1d5c516818c8b31dd0f29ec851e9c1](https://user-images.githubusercontent.com/103561103/226859180-88f1fe09-e76d-410b-9847-e63bb66461bb.jpg)
 
 ```c++
 class Solution {
@@ -108,6 +109,7 @@ public:
 
 ## 四数之和
 
+![31b9cdac3c77a9468721ce997b3fe77](https://user-images.githubusercontent.com/103561103/226859373-3bd721be-8cc0-4dad-a11a-8f9f5a765f86.jpg)
 
 
 ```c++
