@@ -3,6 +3,7 @@
 ## 反转字符串
 
 ![fd6e1bf9dcf8ddb0068fb77ff6e2f74](C:\Users\DELL\Desktop\fd6e1bf9dcf8ddb0068fb77ff6e2f74.jpg)
+![fd6e1bf9dcf8ddb0068fb77ff6e2f74](https://user-images.githubusercontent.com/103561103/227170458-d753286b-525e-4afb-951a-7ecb78d23975.jpg)
 
 ```c++
 class Solution {
@@ -22,7 +23,8 @@ public:
 
 
 
-![33590a345301742b7d165f7e909bbfe](C:\Users\DELL\Desktop\33590a345301742b7d165f7e909bbfe.jpg)
+![33590a345301742b7d165f7e909bbfe](https://user-images.githubusercontent.com/103561103/227170582-353517df-cce9-4092-b588-c0fd3076563c.jpg)
+
 
 ```c++
 class Solution {
@@ -46,7 +48,7 @@ public:
 
 ## 替换空格
 
-![623c2c9ab1c4484dd4175387a16bad3](C:\Users\DELL\Desktop\623c2c9ab1c4484dd4175387a16bad3.jpg)
+![623c2c9ab1c4484dd4175387a16bad3](https://user-images.githubusercontent.com/103561103/227170677-0055a4b7-84d4-4415-9743-1a478e809c3b.jpg)
 
 ```c++
 class Solution {
@@ -80,7 +82,7 @@ public:
 
 ## 反转单词
 
-![bc737fd88a0c8272546bb681bc069de](C:\Users\DELL\Desktop\bc737fd88a0c8272546bb681bc069de.jpg)
+![bc737fd88a0c8272546bb681bc069de](https://user-images.githubusercontent.com/103561103/227170739-a93744bb-5b69-4757-9557-2950c825be7b.jpg)
 
 ```
 class Solution {
@@ -123,7 +125,7 @@ public:
 
 ## 左旋转字符串
 
-![2504f328511e554783134212c1b6fa0](C:\Users\DELL\Desktop\2504f328511e554783134212c1b6fa0.jpg)
+![2504f328511e554783134212c1b6fa0](https://user-images.githubusercontent.com/103561103/227170792-fd544952-ecfb-4638-976d-2602726bb8e3.jpg)
 
 ```c++
 class Solution {
