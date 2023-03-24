@@ -2,7 +2,9 @@
 
 ## 用栈来实现队列
 
+![459c1148dfc1c7d165d225ecc8fe8e6](https://user-images.githubusercontent.com/103561103/227432552-3923b1e4-81c5-4e88-b67f-ef62a6fd6b63.jpg)
 
+![35940df96c85e40c210a96b08cfc413](https://user-images.githubusercontent.com/103561103/227432596-8e52ce12-1c7b-4ee5-a802-65dc66b0d541.jpg)
 
 ```c++
 class MyQueue {
@@ -48,6 +50,7 @@ public:
 
 ## 用队列来实现栈
 
+![b3e5af1109a05e3be439d1fd9541694](https://user-images.githubusercontent.com/103561103/227432632-bf1e9b5b-bdda-4e51-a0b8-df974b5781e1.jpg)
 
 
 ```c++
